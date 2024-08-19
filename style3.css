@@ -1,0 +1,68 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #2dbbdf; 
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+    z-index: 1000;
+}
+
+.boards-container {
+    display: flex;
+    overflow-x: auto;
+    height: calc(100% - 60px);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.board {
+    background-color: #e0e0e0; 
+    width: 300px;
+    max-width: 400px;
+    margin-right: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.board-title {
+    background-color: #b0b0b0; 
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.tasks {
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+.task {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.task-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
